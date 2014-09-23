@@ -903,6 +903,7 @@ footer.entry-meta { margin-top: 24px; }
   .attachment .image-navigation, .attachment .entry-attachment .attachment { max-width: 604px; padding: 0; width: 100%; }
   .gallery-caption { display: none; } }
 @media (max-width: 643px) { .logo { height: 70px; }
+  .site-title, .site-description { margin-left: 40px; }
   .site-title { font-size: 36px; }
   .site-description { font-size: 24px; }
   #content .entry-header, #content .entry-content, #content .entry-summary, #content footer.entry-meta, #content .featured-gallery, .search.sidebar .page-content, .blog.sidebar .page-content, .sidebar .post-navigation .nav-links, .paging-navigation .nav-links, #content .author-info, .comments-area .comments-title, .comments-area .comment-list, .comments-area .comment-navigation, .comment-respond, .sidebar .site-info, .sidebar .paging-navigation .nav-links { padding-left: 20px; padding-right: 20px; }
