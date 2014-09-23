@@ -2865,9 +2865,11 @@ footer.entry-meta {
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
     .logo {
-        height: 100px;
+        height: 90px;
     }
+
     .site-title {
+        font-size: 48px;
         padding: 10px 0;
     }
 
@@ -2894,9 +2896,17 @@ footer.entry-meta {
 }
 
 @media (max-width: 643px) {
-	.site-title {
-		font-size: 30px;
+    .logo {
+        height: 70px;
+    }
+
+    .site-title {
+		font-size: 36px;
 	}
+
+    .site-description {
+        font-size: 24px;
+    }
 
 	#content .entry-header,
 	#content .entry-content,

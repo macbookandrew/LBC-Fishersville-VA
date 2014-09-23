@@ -896,13 +896,15 @@ footer.entry-meta { margin-top: 24px; }
   .logo { width: 10%; }
   .site-title { padding: 100px 0 10px; } }
 /* Collapse oversized image and pulled images after iPad breakpoint. */
-@media (max-width: 767px) { .logo { height: 100px; }
-  .site-title { padding: 10px 0; }
+@media (max-width: 767px) { .logo { height: 90px; }
+  .site-title { font-size: 48px; padding: 10px 0; }
   .entry-content img.alignleft, .entry-content .wp-caption.alignleft { margin-left: 0; }
   .entry-content img.alignright, .entry-content .wp-caption.alignright { margin-right: 0; }
   .attachment .image-navigation, .attachment .entry-attachment .attachment { max-width: 604px; padding: 0; width: 100%; }
   .gallery-caption { display: none; } }
-@media (max-width: 643px) { .site-title { font-size: 30px; }
+@media (max-width: 643px) { .logo { height: 70px; }
+  .site-title { font-size: 36px; }
+  .site-description { font-size: 24px; }
   #content .entry-header, #content .entry-content, #content .entry-summary, #content footer.entry-meta, #content .featured-gallery, .search.sidebar .page-content, .blog.sidebar .page-content, .sidebar .post-navigation .nav-links, .paging-navigation .nav-links, #content .author-info, .comments-area .comments-title, .comments-area .comment-list, .comments-area .comment-navigation, .comment-respond, .sidebar .site-info, .sidebar .paging-navigation .nav-links { padding-left: 20px; padding-right: 20px; }
   #content .format-status .entry-content, #content .format-status .entry-met { padding-left: 35px; }
   /* Small menu */
