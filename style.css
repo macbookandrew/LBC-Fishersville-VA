@@ -253,12 +253,17 @@ img.wp-smiley, .rsswidget img { border: 0; border-radius: 0; box-shadow: none; m
 /** 4.1 Site Header ---------------------------------------------------------------------------- */
 .site-header { position: relative; }
 
-.site-header .home-link { color: #141412; display: block; margin: 0 auto; max-width: 1080px; min-height: 230px; padding: 0 20px; text-decoration: none; width: 100%; }
+.site-header .home-link { color: #141412; display: block; margin: 0 auto; max-width: 1080px; padding: 0 20px; text-decoration: none; width: 100%; }
 
-.site-header .site-title:hover { text-decoration: underline; }
+.logo { float: left; max-height: 200px; margin-top: 1%; padding-right: 1em; }
 
-.site-title { font-size: 60px; font-weight: bold; line-height: 1; margin: 0; padding: 58px 0 10px; }
+.site-header .site-title:hover { text-decoration: none; }
 
+.site-title, .site-description { clear: none; }
+
+.site-title { font-size: 60px; font-weight: bold; line-height: 1; margin: 0; }
+
+.site-description { margin: 0; padding-left: 10px; }
 
 /** 4.2 Navigation ---------------------------------------------------------------------------- */
 .main-navigation { clear: both; margin: 0 auto; max-width: 1080px; min-height: 45px; position: relative; }
@@ -887,8 +892,13 @@ footer.entry-meta { margin-top: 24px; }
   .site-main .sidebar-container { height: auto; margin: 0 auto; max-width: 604px; position: relative; top: 20px; }
   .site-main .widget-area { float: none; margin: 0; width: 100%; }
   .sidebar .site-footer .widget-area { max-width: 100%; left: 0; } }
+@media (min-width: 768px) { .site-header .home-link { min-height: 230px; }
+  .logo { width: 10%; }
+  .site-title { padding: 100px 0 10px; } }
 /* Collapse oversized image and pulled images after iPad breakpoint. */
-@media (max-width: 767px) { .entry-content img.alignleft, .entry-content .wp-caption.alignleft { margin-left: 0; }
+@media (max-width: 767px) { .logo { height: 100px; }
+  .site-title { padding: 10px 0; }
+  .entry-content img.alignleft, .entry-content .wp-caption.alignleft { margin-left: 0; }
   .entry-content img.alignright, .entry-content .wp-caption.alignright { margin-right: 0; }
   .attachment .image-navigation, .attachment .entry-attachment .attachment { max-width: 604px; padding: 0; width: 100%; }
   .gallery-caption { display: none; } }

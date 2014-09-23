@@ -871,14 +871,26 @@ img.wp-smiley,
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
-	min-height: 230px;
 	padding: 0 20px;
 	text-decoration: none;
 	width: 100%;
 }
 
+.logo {
+
+    float: left;
+    max-height: 200px;
+    margin-top: 1%;
+    padding-right: 1em;
+}
+
 .site-header .site-title:hover {
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+.site-title,
+.site-description {
+    clear: none;
 }
 
 .site-title {
@@ -886,11 +898,11 @@ img.wp-smiley,
 	font-weight: bold;
 	line-height: 1;
 	margin: 0;
-	padding: 58px 0 10px;
 }
 
 .site-description {
 	margin: 0;
+    padding-left: 10px;
 }
 
 
@@ -2835,9 +2847,28 @@ footer.entry-meta {
 	}
 }
 
+@media (min-width: 768px) {
+    .site-header .home-link {
+        min-height: 230px;
+    }
+    .logo {
+        width: 10%;
+    }
+    .site-title {
+        padding: 100px 0 10px;
+    }
+}
+
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
-	.entry-content img.alignleft,
+    .logo {
+        height: 100px;
+    }
+    .site-title {
+        padding: 10px 0;
+    }
+
+    .entry-content img.alignleft,
 	.entry-content .wp-caption.alignleft {
 		margin-left: 0;
 	}
