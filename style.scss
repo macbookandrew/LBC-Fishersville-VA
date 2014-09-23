@@ -40,6 +40,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *   5.11 - 404
  *   5.12 - Comments
  *   5.13 - Multisite
+ *   5.14 - Vcards
  * 6.0 - Sidebar
  *   6.1 - Widgets
  * 7.0 - Footer
@@ -183,9 +184,9 @@ a:hover {
 }
 
 a.tel {
-    color: inherit;
-    text-decoration: none;
-    cursor: default;
+    color: inherit !important;
+    text-decoration: none !important;
+    cursor: default !important;
 }
 
 h1,
@@ -2485,6 +2486,15 @@ footer.entry-meta {
 
 
 /**
+ * 5.14 Vcard
+ * ----------------------------------------------------------------------------
+ */
+
+.vcard address, p {
+    margin: 0;
+}
+
+/**
  * 6.0 Sidebar
  * ----------------------------------------------------------------------------
  */
@@ -2525,7 +2535,7 @@ footer.entry-meta {
 }
 
 .widget li {
-	padding: 5px 0;
+	padding: 0;
 }
 
 .widget .children li:last-child {
@@ -2599,6 +2609,9 @@ footer.entry-meta {
 	background-color: transparent;
 }
 
+.widget h4 {
+    margin-bottom: 0;
+}
 
 /**
  * 7.0 Footer
