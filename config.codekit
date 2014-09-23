@@ -113,6 +113,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/water-header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72608,
+		"inputAbbreviatedPath": "\/images\/water-header.jpg",
+		"outputAbbreviatedPath": "\/images\/water-header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/style.css": {
 		"fileType": 16,
 		"ignore": 1,

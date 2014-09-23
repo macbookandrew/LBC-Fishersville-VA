@@ -68,24 +68,24 @@ $dark-gray:                 #333333;
 $almost-black:              #210d10; // quote post format background
 $black:                     #000000;
 
-$footer-text:               #686758;
-$footer-background:         #e8e5ce;
-$footer-link:               #e6402a; // footer widget links
-
 $text-color:                #141412; // normal body text
 
-$link-color:                #ca3c08; // normal link state
-$link-highlight:            #ea9629; // link :hover state
-$link-visited:              #ac0404; // link :active, :focus states
-$page-links:                #e63f2a; // paged navigation, etc.
-$secondary-links:           #bc360a; // widget <a>, etc.
+$link-color:                #1f24a5; // normal link state
+$link-highlight:            #6469eb; // link :hover state
+$link-visited:              $link-color; // link :active, :focus states
+$page-links:                $link-color; // paged navigation, etc.
+$secondary-links:           $link-color; // widget <a>, etc.
 
-$input-focus:               #c3c0ab;
+$input-focus:               #abacc3;
 $placeholder-color:         #7d7b6d; // input placeholders, etc.
 
-$menu-border:               #f7f5e7;
-$menu-hover:                #220e10; // menubar link hover text color
-$menu-background-hover:     #db572f; // menubar
+$menu-background:           #e7eff7;
+$menu-hover-text:           #0e0e22; // menubar link hover text color
+$menu-hover-background:     #4949d8; // menubar
+
+$footer-text:               #474a65;
+$footer-background:         $menu-background;
+$footer-link:               #2a5de6; // footer widget links
 
 $required:                  #ed331c; // comment form
 
@@ -596,7 +596,7 @@ hr {
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba($black, 0.6);
 	clip: auto !important;
 	color: #21759b;
 	display: block;
@@ -617,7 +617,7 @@ hr {
 button,
 input,
 textarea {
-	border: 2px solid #d4d0ba;
+	border: 2px solid $input-focus;
 	font-family: inherit;
 	padding: 5px;
 }
@@ -789,7 +789,7 @@ img.alignnone {
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
-	color: $menu-hover;
+	color: $menu-hover-text;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 300;
@@ -912,6 +912,7 @@ img.wp-smiley,
  * 4.2 Navigation
  * ----------------------------------------------------------------------------
  */
+// TODO: highlight parent on child menu hover
 
 .main-navigation {
 	clear: both;
@@ -945,14 +946,14 @@ div.nav-menu > ul {
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background-color: $menu-hover;
+	background-color: $menu-hover-text;
 	color: $white;
 }
 
 .nav-menu .sub-menu,
 .nav-menu .children {
-	background-color: $menu-hover;
-	border: 2px solid $menu-border;
+	background-color: $menu-hover-text;
+	border: 2px solid $menu-background;
 	border-top: 0;
 	padding: 0;
 	position: absolute;
@@ -982,7 +983,7 @@ ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover,
 ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
-	background-color: $menu-background-hover;
+	background-color: $menu-hover-background;
 }
 
 ul.nav-menu li:hover > ul,
@@ -1008,7 +1009,7 @@ ul.nav-menu .focus > ul,
 
 /* Navbar */
 .navbar {
-	background-color: $menu-border;
+	background-color: $menu-background;
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
@@ -1284,7 +1285,7 @@ footer.entry-meta {
 /* Mediaelements */
 .hentry .mejs-mediaelement,
 .hentry .mejs-container .mejs-controls {
-	background: $menu-hover;
+	background: $menu-hover-text;
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-loaded,
@@ -1395,7 +1396,7 @@ footer.entry-meta {
 }
 
 .gallery-caption {
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba($black, 0.7);
 	box-sizing: border-box;
 	color: $white;
 	font-size: 14px;
@@ -1442,7 +1443,7 @@ footer.entry-meta {
 
 /* Aside */
 .format-aside {
-	background-color: $menu-border;
+	background-color: $menu-background;
 }
 
 .blog .format-aside:first-of-type,
@@ -1450,7 +1451,7 @@ footer.entry-meta {
 .format-aside + .format-aside,
 .format-aside + .format-link,
 .format-link + .format-aside {
-	box-shadow: inset 0 2px 2px rgba(173, 165, 105, 0.2);
+	box-shadow: inset 0 2px 2px rgba($input-focus, 0.2);
 }
 
 .format-aside .entry-meta {
@@ -1474,7 +1475,7 @@ footer.entry-meta {
 
 /* Audio */
 .format-audio {
-	background-color: $menu-background-hover;
+	background-color: $menu-hover-background;
 }
 
 .format-audio .entry-title {
@@ -1590,12 +1591,12 @@ footer.entry-meta {
 
 /* Link */
 .format-link {
-	background-color: $menu-border;
+	background-color: $menu-background;
 }
 
 .blog .format-link:first-of-type,
 .single .format-link:first-of-type {
-	box-shadow: inset 0 2px 2px rgba(173, 165, 105, 0.2);
+	box-shadow: inset 0 2px 2px rgba($input-focus, 0.2);
 }
 
 .format-link .entry-header,
@@ -1625,7 +1626,7 @@ footer.entry-meta {
 
 .format-quote .entry-content,
 .format-quote .entry-meta {
-	color: $menu-border;
+	color: $menu-background;
 }
 
 .format-quote .entry-content blockquote {
@@ -1693,7 +1694,7 @@ footer.entry-meta {
 }
 
 .format-status .entry-meta a {
-	color: $menu-border;
+	color: $menu-background;
 }
 
 .sidebar .format-status .entry-content,
@@ -1730,7 +1731,7 @@ footer.entry-meta {
 }
 
 .format-status .entry-content {
-	color: $menu-border;
+	color: $menu-background;
 	font-size: 24px;
 	font-style: italic;
 	font-weight: 300;
@@ -1740,7 +1741,7 @@ footer.entry-meta {
 }
 
 .format-status .entry-content p:first-child:before {
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: rgba($black, 0.65);
 	content: "";
 	height: 3px;
 	margin-top: 13px;
@@ -1768,7 +1769,7 @@ footer.entry-meta {
 
 /* Video */
 .format-video {
-	background-color: $menu-background-hover;
+	background-color: $menu-hover-background;
 }
 
 .format-video .entry-content a,
@@ -1784,7 +1785,7 @@ footer.entry-meta {
 }
 
 .format-video .entry-meta {
-	color: $menu-hover;
+	color: $menu-hover-text;
 }
 
 
@@ -2057,7 +2058,7 @@ footer.entry-meta {
 }
 
 .single-format-status .author-description {
-	color: $menu-border;
+	color: $menu-background;
 }
 
 .author-description .author-title {
@@ -2341,7 +2342,7 @@ footer.entry-meta {
 
 /* Comment form */
 .comment-respond {
-	background-color: $menu-border;
+	background-color: $menu-background;
 	padding: 30px 0;
 }
 
@@ -2439,7 +2440,7 @@ footer.entry-meta {
 }
 
 .no-comments {
-	background-color: $menu-border;
+	background-color: $menu-background;
 	font-size: 20px;
 	font-style: italic;
 	font-weight: 300;
@@ -2500,7 +2501,7 @@ footer.entry-meta {
  */
 
 .widget {
-	background-color: rgba(247, 245, 231, 0.7);
+	background-color: rgba($menu-background, 0.7);
 	font-size: 14px;
 	-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
@@ -2583,15 +2584,15 @@ footer.entry-meta {
 }
 
 .widget_calendar a:hover {
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba($black, 0.15);
 }
 
 .widget_calendar tbody td {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba($white, 0.5);
 }
 
 .site-footer .widget_calendar tbody td {
-	background-color: rgba(255, 255, 255, 0.05);
+	background-color: rgba($white, 0.05);
 }
 
 .widget_calendar tbody .pad, .site-footer .widget_calendar tbody .pad {
@@ -2621,7 +2622,7 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: $menu-hover;
+	background-color: $menu-hover-text;
 	padding: 20px 0;
 }
 
@@ -2979,7 +2980,7 @@ footer.entry-meta {
 
 	.toggled-on .nav-menu li a:hover,
 	.toggled-on .nav-menu ul a:hover {
-		background-color: $menu-background-hover;
+		background-color: $menu-hover-background;
 		color: $white;
 	}
 
