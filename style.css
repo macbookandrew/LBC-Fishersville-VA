@@ -842,6 +842,11 @@ footer.entry-meta { margin-top: 24px; }
 
 .widget h4 { margin-bottom: 0; }
 
+.widget .social-media li { display: block; height: 32px; padding-left: 40px; background-repeat: no-repeat; background-size: 32px 32px; }
+.widget .social-media li a { display: block; padding: 5px 0; }
+
+.social-media .facebook { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9Ijg4LjQiIGhlaWdodD0iODguNCIgdmlld0JveD0iMCAwIDg4LjQgODguNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgODguMzk4IDg4LjM5NyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzUwN0NCRCIgZD0iTTQ0LjIgMEMxOS44IDAgMCAxOS44IDAgNDQuMnMxOS44IDQ0LjIgNDQuMiA0NC4yYzI0LjQgMCA0NC4yLTE5LjggNDQuMi00NC4yUzY4LjYgMCA0NC4yIDB6TTUwLjYgNDQuMWgtNC40YzAgNy4xIDAgMTUuOSAwIDE1LjloLTYuNmMwIDAgMC04LjcgMC0xNS45aC0zLjF2LTUuNmgzLjF2LTMuNmMwLTIuNiAxLjItNi43IDYuNy02LjdsNC45IDB2NS40YzAgMC0zIDAtMy41IDBzLTEuNCAwLjMtMS40IDEuNXYzLjNoNUw1MC42IDQ0LjF6Ii8+PC9zdmc+"); }
+
 /** 7.0 Footer ---------------------------------------------------------------------------- */
 .site-footer { background-color: #e7eff7; color: #474a65; font-size: 14px; text-align: center; }
 
