@@ -255,7 +255,7 @@ img.wp-smiley, .rsswidget img { border: 0; border-radius: 0; box-shadow: none; m
 
 .site-header .home-link { color: #141412; display: block; margin: 0 auto; max-width: 1080px; padding: 0 20px; text-decoration: none; width: 100%; }
 
-.logo { float: left; max-height: 200px; margin-top: 1%; padding-right: 1em; }
+.logo { float: left; max-height: 200px; margin-top: 1%; padding-right: 1em; -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6)); -webkit-transform: translateZ(0); }
 
 .site-header .site-title:hover { text-decoration: none; }
 

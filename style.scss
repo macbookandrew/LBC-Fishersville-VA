@@ -881,6 +881,8 @@ img.wp-smiley,
     max-height: 200px;
     margin-top: 1%;
     padding-right: 1em;
+    -webkit-filter: drop-shadow(0 0 3px rgba($black, 0.6));
+    -webkit-transform: translateZ(0);
 }
 
 .site-header .site-title:hover {
