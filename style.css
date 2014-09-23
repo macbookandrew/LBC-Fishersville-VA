@@ -253,10 +253,6 @@ img.wp-smiley, .rsswidget img { border: 0; border-radius: 0; box-shadow: none; m
 /** 4.1 Site Header ---------------------------------------------------------------------------- */
 .site-header { position: relative; }
 
-.site-header { background: url(images/water-header.jpg) no-repeat scroll top; background-size: 1600px auto; }
-@media (max-width: 767px) { .site-header { background-size: 768px auto; } }
-@media (max-width: 359px) { .site-header { background-size: 360px auto; } }
-
 .site-header .home-link { color: #141412; display: block; margin: 0 auto; max-width: 1080px; padding: 0 20px; text-decoration: none; width: 100%; }
 
 .logo { float: left; max-height: 200px; margin-top: 1%; padding-right: 1em; }

@@ -866,14 +866,6 @@ img.wp-smiley,
 	position: relative;
 }
 
-.site-header {
-    background: url(images/water-header.jpg) no-repeat scroll top;
-    background-size: 1600px auto;
-
-    @media (max-width: 767px) { background-size: 768px auto; }
-    @media (max-width: 359px) { background-size: 360px auto; }
-}
-
 .site-header .home-link {
 	color: $text-color;
 	display: block;
@@ -885,7 +877,6 @@ img.wp-smiley,
 }
 
 .logo {
-
     float: left;
     max-height: 200px;
     margin-top: 1%;
