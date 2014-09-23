@@ -10,4 +10,3 @@ function deregister_default_fonts() {
     wp_enqueue_style( 'lbc-webfonts' );
 }
 add_action( 'wp_enqueue_scripts', 'deregister_default_fonts', 100 );
-

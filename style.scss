@@ -899,7 +899,7 @@ img.wp-smiley,
 .site-title,
 .site-description {
     clear: none;
-    color: $black;
+    text-shadow: 0 0 8px rgba($black, 0.6);
 }
 
 .site-title {
