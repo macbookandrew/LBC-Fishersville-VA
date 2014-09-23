@@ -83,8 +83,9 @@ $menu-background:           #e7eff7;
 $menu-hover-text:           #0e0e22; // menubar link hover text color
 $menu-hover-background:     #3c3ccc; // menubar
 
+$footer-background:         $menu-hover-text;
 $footer-text:               #474a65;
-$footer-background:         $menu-background;
+$copyright-background:      $menu-background; // copyright, attachment headers, archive headers
 $footer-link:               #2a5de6; // footer widget links
 
 $required:                  #ed331c; // comment form
@@ -152,6 +153,7 @@ textarea {
 }
 
 body {
+    background-color: $footer-background;
 	color: $text-color;
 	line-height: 1.5;
 	margin: 0;
@@ -827,8 +829,6 @@ img.wp-smiley,
 
 .site {
 	background-color: $white;
-	border-left: 1px solid #f2f2f2;
-	border-right: 1px solid #f2f2f2;
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
@@ -1795,7 +1795,7 @@ footer.entry-meta {
  */
 
 .attachment .hentry {
-	background-color: $footer-background;
+	background-color: $copyright-background;
 	margin: 0;
 	padding: 0;
 }
@@ -1955,7 +1955,7 @@ footer.entry-meta {
 }
 
 .paging-navigation {
-	background-color: $footer-background;
+	background-color: $copyright-background;
 	padding: 40px 0;
 }
 
@@ -2083,7 +2083,7 @@ footer.entry-meta {
  */
 
 .archive-header {
-	background-color: $footer-background;
+	background-color: $copyright-background;
 }
 
 .archive-title,
@@ -2114,7 +2114,7 @@ footer.entry-meta {
  */
 
 .page-header {
-	background-color: $footer-background;
+	background-color: $copyright-background;
 }
 
 .page-title {
@@ -2158,7 +2158,7 @@ footer.entry-meta {
 }
 
 .error404 .page-title:before {
-	color: $footer-background;
+	color: $copyright-background;
 	content: "\f423";
 	font-size: 964px;
 	line-height: 0.6;
@@ -2169,7 +2169,7 @@ footer.entry-meta {
 }
 
 .error404 .page-wrapper {
-	background-color: $footer-background;
+	background-color: $copyright-background;
 }
 
 .error404 .page-header,
@@ -2606,7 +2606,7 @@ footer.entry-meta {
  */
 
 .site-footer {
-	background-color: $footer-background;
+	background-color: $copyright-background;
 	color: $footer-text;
 	font-size: 14px;
 	text-align: center;
@@ -2622,7 +2622,7 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: $menu-hover-text;
+	background-color: $footer-background;
 	padding: 20px 0;
 }
 
