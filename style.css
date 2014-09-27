@@ -793,7 +793,7 @@ footer.entry-meta { margin-top: 24px; }
 .site-main .mu_register input[type="submit"] { width: auto; }
 
 /** 5.14 Vcard ---------------------------------------------------------------------------- */
-.vcard address, p { margin: 0; }
+.vcard address, .vcard p { margin: 0; }
 
 /** 6.0 Sidebar ---------------------------------------------------------------------------- */
 .site-main .widget-area { float: right; width: 300px; }
