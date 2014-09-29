@@ -2804,6 +2804,12 @@ footer.entry-meta {
 	}
 }
 
+@media (min-width: 1000px) {
+    .hentry {
+        min-height: 40em;
+    }
+}
+
 @media (max-width: 999px) {
 	.sidebar .entry-header,
 	.sidebar .entry-content,
