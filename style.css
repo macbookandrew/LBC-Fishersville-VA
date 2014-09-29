@@ -290,6 +290,8 @@ ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul, ul.nav-menu .focus > ul, 
 
 .nav-menu .children .current_page_item > a, .nav-menu .children .current_page_ancestor > a, .nav-menu .children .current-menu-item > a, .nav-menu .children .current-menu-ancestor > a { color: #6469eb; }
 
+.nav-menu .children .current_page_item > a:hover, .nav-menu .children .current_page_ancestor > a:hover, .nav-menu .children .current-menu-item > a:hover, .nav-menu .children .current-menu-ancestor > a:hover { color: white; }
+
 .menu-toggle { display: none; }
 
 /* Navbar */

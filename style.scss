@@ -1011,6 +1011,13 @@ ul.nav-menu .focus > ul,
 	color: $link-highlight;
 }
 
+.nav-menu .children .current_page_item > a:hover,
+.nav-menu .children .current_page_ancestor > a:hover,
+.nav-menu .children .current-menu-item > a:hover,
+.nav-menu .children .current-menu-ancestor > a:hover {
+	color: white;
+}
+
 .menu-toggle {
 	display: none;
 }
