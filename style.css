@@ -286,7 +286,9 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 
 ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul, ul.nav-menu .focus > ul, .nav-menu .focus > ul { clip: inherit; overflow: inherit; height: inherit; width: inherit; }
 
-.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a { color: #1f24a5; }
+.nav-menu > .current_page_item > a, .nav-menu > .current_page_ancestor > a, .nav-menu > .current-menu-item > a, .nav-menu > .current-menu-ancestor > a { color: #1f24a5; }
+
+.nav-menu .children .current_page_item > a, .nav-menu .children .current_page_ancestor > a, .nav-menu .children .current-menu-item > a, .nav-menu .children .current-menu-ancestor > a { color: #6469eb; }
 
 .menu-toggle { display: none; }
 

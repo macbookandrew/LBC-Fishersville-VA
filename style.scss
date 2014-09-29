@@ -997,11 +997,18 @@ ul.nav-menu .focus > ul,
 	width: inherit;
 }
 
-.nav-menu .current_page_item > a,
-.nav-menu .current_page_ancestor > a,
-.nav-menu .current-menu-item > a,
-.nav-menu .current-menu-ancestor > a {
+.nav-menu > .current_page_item > a,
+.nav-menu > .current_page_ancestor > a,
+.nav-menu > .current-menu-item > a,
+.nav-menu > .current-menu-ancestor > a {
 	color: $secondary-links;
+}
+
+.nav-menu .children .current_page_item > a,
+.nav-menu .children .current_page_ancestor > a,
+.nav-menu .children .current-menu-item > a,
+.nav-menu .children .current-menu-ancestor > a {
+	color: $link-highlight;
 }
 
 .menu-toggle {
