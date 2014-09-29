@@ -304,9 +304,9 @@ ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul, ul.nav-menu .focus > ul, 
 /** 5.0 Content ---------------------------------------------------------------------------- */
 .hentry { padding: 40px 0; }
 
-.entry-header, .entry-content, .entry-summary, .entry-meta { margin: 0 auto; max-width: 604px; width: 100%; }
+.entry-header, .entry-content, .entry-summary, .entry-meta, #wpfc_sermon_sorting { margin: 0 auto; max-width: 604px; width: 100%; }
 
-.sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta { max-width: 1040px; padding: 0 376px 0 60px; }
+.sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta, .sidebar #wpfc_sermon_sorting { max-width: 1040px; padding: 0 376px 0 60px; }
 
 /** 5.1 Entry Header ---------------------------------------------------------------------------- */
 .sidebar .entry-header .entry-meta { padding: 0; }
@@ -890,7 +890,7 @@ footer.entry-meta { margin-top: 24px; }
   .attachment .image-navigation { max-width: 724px; }
   .image-navigation .nav-previous, .image-navigation .nav-next { position: static; }
   .site-main .widget-area { margin-right: 60px; } }
-@media (max-width: 999px) { .sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta, .sidebar .comment-list, .sidebar .comment-reply-title, .sidebar .comment-navigation, .sidebar .comment-respond .comment-form, .sidebar .featured-gallery, .sidebar .post-navigation .nav-links, .author.sidebar .author-info { max-width: 604px; padding-left: 0; padding-right: 0; }
+@media (max-width: 999px) { .sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta, .sidebar .comment-list, .sidebar .comment-reply-title, .sidebar .comment-navigation, .sidebar .comment-respond .comment-form, .sidebar .featured-gallery, .sidebar .post-navigation .nav-links, .author.sidebar .author-info, .sidebar #wpfc_sermon_sorting { max-width: 604px; padding-left: 0; padding-right: 0; }
   .sidebar .site-info, .search.sidebar .page-content, .blog.sidebar .page-content, .attachment .entry-header, .sidebar .comments-title { max-width: 604px; }
   .sidebar .archive-meta, .attachment .entry-header, .search.sidebar .page-content, .blog.sidebar .page-content, .sidebar .site-info, .sidebar .comments-title, .sidebar .no-comments { padding-left: 0; padding-right: 0; }
   .attachment .entry-meta { float: left; text-align: left; width: 100%; }
