@@ -37,7 +37,7 @@
 	function armd_dashboard_widget_function() {
 		// Entering the text between the quotes
 		echo "<ul>
-		<li>Release Date: February 2013</li>
+		<li>Release Date: October 2014</li>
 		<li>Developer: <a href=\"http://andrewrminion.com/\" target=\"_blank\">AndrewRMinion Design</a></li>
 		<li>Hosting provider: ANHosting (AndrewRMinion Design)</li>
 		</ul>";
